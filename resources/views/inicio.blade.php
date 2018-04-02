@@ -97,9 +97,7 @@
 @endsection
 
 @section('script')
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.5.0/vue-resource.js"></script>
-<script type="text/javascript">
+<script type="text/javascript" src="{{ asset('js/vue.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('js/vue-resource.min.js')}}"></script>
 
-</script>
 @endsection

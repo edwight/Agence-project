@@ -13,7 +13,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="{{ asset('css/font-awesome/css/font-awesome.min.css')}}" />
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/mystyle.css') }}">
 
@@ -28,14 +29,14 @@
   <p>© Company 2017-2018</p>
 </footer>
 
-@yield('script')
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+@yield('script')
+<script src="{{ asset('js/jquery.min.js')}}"></script>
+<script src="{{ asset('js/bootstrap.min.js')}}"></script>
 
 <script src="{{ asset('js/multiselect.min.js')}}"></script>
 
-<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="{{ asset('js/highcharts.min.js')}}"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 
 <script src="{{ asset('js/myscripts.js')}}"></script>

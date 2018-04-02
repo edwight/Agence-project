@@ -17,17 +17,20 @@ Route::get('/', function () {
 });
 */
 use App\User;
+
 Route::get('/', function(){
     return view('inicio');
 });
 Route::get('/usuarios', function(){
 
 	//$users = User::all();
-	$consultores = DB::table('cao_usuario')->join('permissao_sistema','cao_usuario.co_usuario','=','permissao_sistema.co_usuario')
-   ->where('co_sistema',1)
-   ->where('in_ativo','S')
-   ->whereBetween('co_tipo_usuario',[0,,1,2])
-   ->get();});
+	$consultores = User::join('permissao_sistema','cao_usuario.co_usuario','=','permissao_sistema.co_usuario')
+	   ->where('co_sistema',1)
+	   ->where('in_activo','S')
+	   ->whereBetween('co_tipo_usuario',[0,1,2])
+	   ->get();
+	  return response()->json($consultores);
+});
 
 
 Route::get('/relatorio', 'DesempenhoController@getRelatorio');

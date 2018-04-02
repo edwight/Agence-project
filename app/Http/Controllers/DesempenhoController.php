@@ -30,8 +30,9 @@ class DesempenhoController extends Controller
                 //this->factura = $factura;
 	}
     public function getRelatorio(Request $request){
-    	//return $request->all();
+    	return $request->all();
     	$result = $this->factura->groupBy('nombre');
+    	//return response()->json($result);
     	foreach ($result as $key => $value) {
 				$sumaReceitaLiquida =[];
 				$sumaCustoFixo=[];

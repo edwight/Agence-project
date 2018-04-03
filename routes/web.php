@@ -21,8 +21,7 @@ use App\User;
 Route::get('/', function(){
     return view('inicio');
 });
-Route::get('/usuarios', function(){
-
+Route::get('usuarios', function(){
 	//$users = User::all();
 	$consultores = User::join('permissao_sistema','cao_usuario.co_usuario','=','permissao_sistema.co_usuario')
 	   ->where('co_sistema',1)

@@ -3,8 +3,8 @@
 Este proyecto está realizado en laravel usando **API**. Para separar la aplicación cliente del servidor. Usando ajax como medio de comunicar los datos con el servidor por medio de **Jquery, vue.js y vue-resource**  finalmente se utilizó highcharts para generar los gráficos de manera dinámica
 
 # demo del proyecto en heroku
-	[Agence-Prueba](https://agence-prueba.herokuapp.com/)
-	![enter image description here](https://upload.wikimedia.org/wikipedia/commons/8/89/Logo_di_Heroku.png)
+[Agence-Prueba](https://agence-prueba.herokuapp.com/)
+![enter image description here](https://upload.wikimedia.org/wikipedia/commons/8/89/Logo_di_Heroku.png)
 	
 # Herramientas Utilizadas
 
